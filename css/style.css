@@ -4,6 +4,8 @@
     --color-accent:#ff3400;
     --color-headings:#1b0760;
     --color-body:#918ca4;
+    --color-border:#ccc;
+    --border-radius:35px;
 }
 
 *,
@@ -17,13 +19,13 @@ html {
     /* 62.5% of 16px = 10px */
     font-size: 62.5%;
 }
+
 body {
     font-family: Inter,Arial, Helvetica, sans-serif;
     font-size: 2.4rem;
     line-height: 1.5;
     color: var(--color-body);
     padding: 1rem;
-
 }
 
 h1,h2,h3{
@@ -110,13 +112,14 @@ a{
     color: white;
 }
 
-.badge--secondary{
+.badge--secondry{
     background: var(--color-secondry);
     color: white;
 }
 
 .badge--small{
     font-size: 1.6rem;
+    padding: 0.5rem 1.5rem;
 }
 
 @media  screen and (min-width:1024px) {
@@ -167,11 +170,10 @@ a{
 
 .icon--primary{
     fill:var(--color-primary);
-   
 }
 
 .icon-container{
-    background: gold;
+    background: rgb(247, 246, 247);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -181,6 +183,7 @@ a{
 }
 
 /* Buttons */
+
 .btn {
     border-radius: 40px;
     border: 0;
@@ -233,7 +236,7 @@ a{
 }
 
 .btn--block{
-    width: 50%;
+    width: 100%;
     display: inline-block;
 }
 @media screen and (min-width:1024px) {
@@ -241,6 +244,117 @@ a{
         font-size: 1.5rem;
         font-weight: 600;
         padding: 1.2rem 2rem;
+        display: inline-block;
+    }
+}
+
+/* Input */
+
+.input {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    color: var(--color-headings);
+    font-size: 2rem;
+    outline: 0;
+    padding: 2rem 3rem;
+}
+
+::placeholder{
+    color: #cdcbd7;
+}
+
+.input-group {
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    display: flex;
+}
+
+.input-group .input{
+    border: 0;
+    flex-grow: 1;
+}
+
+.input-group .btn{
+    margin: 4px;
+}
+
+@media screen and (min-width:1024px){
+    .input{
+        font-size: 1.5rem;
+    }
+}
+
+/* Cards */
+
+.card {
+    box-shadow: 0 0 20px 10px #cdcbd7;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card__header, 
+.card__body{
+    padding: 2rem 3rem;
+
+}
+
+.card--primary .card__header{
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.card--secondry .card__header{
+    background: var(--color-secondry);
+    color: #fff;
+}
+
+.card--secondry .badge--secondry{
+    background:#02cdf1;
+}
+
+/* Plans */
+.plan__name{
+    color: #fff;
+    margin: 0;
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.plan__price{
+    font-size: 6rem;
+}
+
+.plan__billing-cycle{
+    font-size: 2.4rem;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-right: 1rem;
+}
+.plan__description{
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.plan .list__item{
+    margin-bottom: 1.6rem;
+}
+
+@media screen and (min-width:1024px) {
+    .plan__name{
+        font-size: 1.4rem;
     }
     
+    .plan__price{
+        font-size: 4rem;
+    }
+
+    .plan__billing-cycle{
+        font-size: 2rem;
+    }
+
+    .plan__description{
+        font-size: 1.5rem;
+    }
 }
