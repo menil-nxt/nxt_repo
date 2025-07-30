@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/nxt_repo/css/style.css" />
     <link rel="stylesheet" href="/nxt_repo/css/normalize.css" />
   </head>
-  <body>
+  <body style="padding: 5rem">
     <h1>Headind 1</h1>
     <h2>Headind 2</h2>
     <h3>Headind 3</h3>
@@ -24,16 +24,16 @@
       class="badge badge--primary /*(badge--small) you can appaly this class also*/"
       >10% OFF</span
     >
-    <span class="icon-container">
-      <svg class="icon icon--primary">
-        <use xlink:href="images/sprite.svg#clock"></use>
-      </svg>
-    </span>
     <button class="btn btn--primary btn--block">Buy Now</button>
     <a href="#" class="btn btn--secondry btn--block">Buy New</a>
     <a href="#" class="btn btn--outline btn--block">Buy New</a>
     <a href="#" class="btn btn--accent btn--block">Buy New</a>
     <div class="input-group">
+      <span class="icon-container">
+        <svg class="icon icon--primary">
+          <use xlink:href="images/sprite.svg#search"></use>
+        </svg>
+      </span>
       <input type="text" class="input" placeholder="Enter your name..." />
       <button class="btn btn--accent">Search</button>
     </div>
@@ -57,6 +57,58 @@
             <button class="btn btn--outline btn--block">Buy Now</button>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="media__image">
+        <svg class="icon icon--primary">
+          <use xlink:href="images/sprite.svg#snap"></use>
+        </svg>
+      </div>
+      <div class="media__body">
+        <h3 class="media__title">Easy start & managed updates</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis ad et,
+          neque error facere iusto reprehenderit explicabo aperiam quaerat,
+          inventore soluta deserunt repellendus ducimus suscipit!
+        </p>
+      </div>
+    </div>
+    <blockquote class="quote">
+      <p class="quote__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, totam
+        labore et possimus officia temporibus ea ut iusto accusamus quo.
+      </p>
+      <footer>
+        <div class="media">
+          <div class="media__image">
+            <svg class="icon icon--primary quote__line">
+              <use xlink:href="images/sprite.svg#line"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title quote__author">Menil Jotaniya</h3>
+            <p class="quote__company">MJ Company</p>
+          </div>
+        </div>
+      </footer>
+    </blockquote>
+    <div class="grid grid--1x2 grid--1x3">
+      <div style="height: 100px; background: gold"></div>
+      <div style="height: 100px; background: dodgerblue"></div>
+      <div style="height: 100px; background: black"></div>
+    </div>
+    <div class="card testimonial">
+      <div class="grid grid--1x2">
+        <div class="menil__img">
+          <img src="/nxt_repo/images/Menil (2).jpg" alt="Happy Smiling Owner" />
+          <span class="icon-container icon-container--body">
+            <svg class="icon icon--white">
+              <use xlink:href="images/sprite.svg#computer"></use>
+            </svg>
+          </span>
+        </div>
+        <div style="height: 100px; background: gold"></div>
       </div>
     </div>
   </body>
