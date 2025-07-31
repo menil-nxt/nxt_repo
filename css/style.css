@@ -184,8 +184,8 @@ a{
 
 .icon-container{
     background: rgb(247, 246, 247);
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
@@ -561,4 +561,17 @@ a{
         padding-left: 6rem;
         padding-right: 6rem;
     }
+}
+
+/* collapsible */
+
+.collapsible__header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.collapsible__heading{
+    margin: 0;
+    font-size: 3rem;
 }
