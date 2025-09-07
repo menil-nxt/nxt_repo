@@ -147,7 +147,6 @@ a{
     padding: 2rem;
 }
 
-
 .list--inline .list__item{
     display: inline-block;
     margin-right: 3rem;
@@ -169,6 +168,7 @@ a{
     .list--tick .list__item{
         padding: 0;
     }
+    
 }
 
 /* Icons */
@@ -330,6 +330,14 @@ a{
     border-radius: 10px;
     overflow: hidden;
 }
+
+.card__header .mac{
+    height:30rem;
+    width:30rem;
+    border-radius: 10px;
+    border: 0;
+}
+
 
 .card__header, 
 .card__body{
@@ -687,8 +695,6 @@ a{
 
 .nav {
     background: #000;
-    display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     padding: 0 1rem;
     align-items: center;
@@ -696,12 +702,13 @@ a{
 
 .nav__list{
     width: 100%;
+    background: #000;
     margin: 0;
 }
 
 .nav__item{
     padding: 0.5rem 2rem;
-    border: 1px solid #222;
+    border: 1px solid #222;    
 }
 
 .nav__item > a{
@@ -714,10 +721,12 @@ a{
     
 }
 
+
 .nav__toggler{
     opacity: .5;
     transition: box-shadow 0.15s;
     cursor: pointer;
+   
 }
 
 .nav.collapsible--expanded .nav__toggler{
@@ -745,6 +754,11 @@ a{
         border-radius: 5px;
     }
 
+    .nav{
+        background: #000;
+    }
+    
+
     .nav__item{
         border: 0;
     }
@@ -761,7 +775,8 @@ a{
 }
 
 .hero__image{
-    width: 100%;
+    width: 110%;
+    height: 90;
 }
 
 @media screen and (min-width:768px){
